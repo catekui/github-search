@@ -1,6 +1,29 @@
 <div class="container">
-    <h1 class="text-center">GITHUB</h1>
-</div>
-<div *ngIf="user">
     <h1>{{user.name}}</h1>
+    <h1 class="text-center">GITHUB</h1>
+    <div *ngIf="user">
+        <div class="panel panel-default">
+            <div class="panel-heading">USER{{user.name}}</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="github-avator img-thumbnail" src="{{user.avator_url}}" alt="">
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="stats">
+                            <span class="label label-primary">{{user.public_repos}}public_repos</span>
+                            <span class="label label-primary">{{user.public_gists}}public_Gists</span>
+                            <span class="label label-primary">{{user.followers}}followers</span>
+                            <span class="label label-primary">{{user.following}}Following</span>
+
+                        </div>
+                        <ul></ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>

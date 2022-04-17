@@ -8,11 +8,16 @@ import { GithubService } from '../github.service';
 })
 export class GithubComponent implements OnInit {
   user: any;
+  repos:any;
 
   constructor(private _githubService:GithubService) { 
     this._githubService.getUser().subscribe((user: any) =>{
       this.user = user;
-      console.log(this.user)
+      
+    })
+    this._githubService.getRepos().subscribe((repos: any) =>{
+      this.repos = repos;
+      
     })
   }
 

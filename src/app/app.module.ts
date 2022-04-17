@@ -22,10 +22,9 @@ import { GithubService } from './github.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // GithubService,
     HttpClientModule
   ],
-  providers: [ ],
+  providers: [ GithubService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
