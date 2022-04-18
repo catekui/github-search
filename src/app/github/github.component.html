@@ -1,4 +1,4 @@
-<div class="container mt-5">
+<div class="container mt-2">
     <form>
         <input type="text" name="username" class="form-control" placeholder="Enter the Github username" [(ngModel)]="username" required>
         <button class="btn btn-primary" (click)="search()">Search</button>
@@ -6,23 +6,24 @@
 </div>
 
 
-<div class="container">
+<div class="container mt-3">
     <div *ngIf="user">
-        <div class="panel panel-default">
+        <div class="panel panel-default panel1">
             <div class="panel-heading"></div>
             <h3 class="panel-title">{{user.name}}</h3>
             <div class="panel-body">
                 <div class="row">
                     <div class="col-md-4">
-                        <img class="github-avatar img-thumbnail" src="{{user.avatar_url}}" alt="">
+                        <!-- <img class="github-avatar img-thumbnail" src="{{user.avatar_url}}" alt=""> -->
+                        <img src="{{user.avatar_url}}" style="width: 280px" class="rounded-circle" alt="">
                     </div>
 
                     <div class="col-md-8">
                         <div class="stats">
                             <button class="btn btn-success">{{user.public_repos}}public_repos</button>
-                            <span class="label label-success">{{user.public_gists}}public_Gists</span>
-                            <span class="label label-info">{{user.followers}}followers</span>
-                            <span class="label label-warning">{{user.following}}Following</span>
+                            <span class="btn btn-primary">{{user.public_gists}}public_Gists</span>
+                            <span class="btn btn-info">{{user.followers}}followers</span>
+                            <span class="btn btn-warning">{{user.following}}Following</span>
 
                         </div>
                         <br>
@@ -54,8 +55,8 @@
                                 <p>{{repo.description}}</p>
                             </div>
                             <div class="col-md-3">
-                                <span class="label label-primary">{{repo.watchers}}Watchers</span>
-                                <span class="label label-success">{{user.fork}}Fork</span>
+                                <span class="btn btn-primary">{{repo.watchers}}Watchers</span>
+                                <span class="btn btn-success">{{user.fork}}Fork</span>
 
                             </div>
 
