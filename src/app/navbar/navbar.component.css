@@ -1,3 +1,7 @@
 .github {
     font-size: xx-large;
 }
+.links {
+    display: flex;
+    justify-content: flex-end;
+}

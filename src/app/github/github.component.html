@@ -1,6 +1,6 @@
 <div class="container mt-5">
     <form>
-        <input type="text" name="username" class="form-control" placeholder="Enter the Github username" [(ngModel)]="username">
+        <input type="text" name="username" class="form-control" placeholder="Enter the Github username" [(ngModel)]="username" required>
         <button class="btn btn-primary" (click)="search()">Search</button>
     </form>
 </div>
@@ -19,7 +19,7 @@
 
                     <div class="col-md-8">
                         <div class="stats">
-                            <button class="label label-success">{{user.public_repos}}public_repos</button>
+                            <button class="btn btn-success">{{user.public_repos}}public_repos</button>
                             <span class="label label-success">{{user.public_gists}}public_Gists</span>
                             <span class="label label-info">{{user.followers}}followers</span>
                             <span class="label label-warning">{{user.following}}Following</span>
@@ -39,7 +39,7 @@
             </div>
         </div>
     </div>
-
+    
     <div class="panel panel-default">
         <div class="panel-heading"></div>
         <h3 class="panel-title text-center">{{user.name}}'s Repos</h3>
