@@ -1,7 +1,10 @@
 <div class="container mt-2">
     <form>
-        <input type="text" name="username" class="form-control" placeholder="Enter the Github username" [(ngModel)]="username" required>
+        <input type="text" name="username" class="form-control"  placeholder="Enter the Github username" [(ngModel)]="username" required>
         <button class="btn btn-info form" (click)="search()">Search</button>
+        <!-- <div [hidden]="username.valid || username.pristine" class="alert alert-danger">
+            <p>username is required</p>
+          </div> -->
     </form>
 </div>
 
