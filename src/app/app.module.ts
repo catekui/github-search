@@ -12,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 // import { FormComponent } from './form/form.component';
 import { GithubComponent } from './github/github.component';
 import { GithubService } from './github.service';
+import { DatePipe } from './date.pipe';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { GithubService } from './github.service';
     AppComponent,
     NavbarComponent,
     // FormComponent,
-    GithubComponent, 
+    GithubComponent,
+    DatePipe, 
      
 
   ],
