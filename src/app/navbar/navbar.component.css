@@ -1,5 +1,6 @@
 .github {
-    font-size: xx-large;
+    font-size: large;
+    background-color: aqua;
 }
 .links {
     display: flex;
