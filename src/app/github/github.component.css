@@ -1,15 +1,13 @@
-* {
-    background-image: url('/src/assets/github.png');
-}
+
 .form{
     width: 100%;
     border-radius: 8px;
     margin-top: 10px;
 }
-.stats {
-    display: flex;
-}
+
 /* buttons  */
 .repos {
-    border-radius: 10px;
+    border-radius: 8px;
+    margin-right: 10px;
+    
 }
