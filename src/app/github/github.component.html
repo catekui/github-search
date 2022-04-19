@@ -35,7 +35,7 @@
                             <li class="list-group-item"><strong>Username: </strong>{{user.login}}</li>
                             <li class="list-group-item"><strong>Location: </strong>{{user.location}}</li>
                             <li class="list-group-item"><strong>Email: </strong>{{user.email}}</li>
-                            <li class="list-group-item"><strong>Member Since: </strong>{{user.created_at}}</li>
+                            <li class="list-group-item"><strong>Member Since: </strong>{{user.created_at |date}}</li>
                             <li class="list-group-item"><strong>Blog: </strong>{{user.blog}}</li>
                         </ul>
 
@@ -48,6 +48,7 @@
     <div class="container" style="text-align: center;">
 
         <div class="row" >
+            <h3 class="card-title text-center text-">{{user.name}}'s Repos</h3>
             <div class="col-md-6" *ngFor="let repos of repos" appHighlight>
                 <div class="card mt-3">
     

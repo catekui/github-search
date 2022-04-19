@@ -12,7 +12,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 // import { FormComponent } from './form/form.component';
 import { GithubComponent } from './github/github.component';
 import { GithubService } from './github.service';
-import { DatePipe } from './date.pipe';
+
+import { DatePipePipe } from './date-pipe.pipe';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { DatePipe } from './date.pipe';
     NavbarComponent,
     // FormComponent,
     GithubComponent,
-    DatePipe, 
+    
+    DatePipePipe, 
      
 
   ],
@@ -29,6 +31,7 @@ import { DatePipe } from './date.pipe';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    
     // NgModel,
     FormsModule
   ],
